@@ -1,0 +1,15 @@
+#d1{
+    border-color: darkgoldenrod;
+    border-width: 20px;
+    border-style: groove;
+}
+
+#d2{
+    border: dotted firebrick 10px;
+}
+
+#d3{
+    border-color: darkmagenta;
+    border-style: ridge;
+    border-width: 50px;
+}

@@ -1,0 +1,13 @@
+div{
+    padding: 20px;
+    border:fuchsia solid 50px;
+    margin: 30px;
+    width: 150px;
+    height: 250px;
+    float: left;
+    border-radius: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+}
