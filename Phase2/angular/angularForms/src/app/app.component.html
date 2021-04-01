@@ -1,0 +1,14 @@
+<div>
+  <h2>Angular Forms</h2>
+
+  <div *ngIf="!flag">
+    <h3>TDF Login</h3>
+    <app-tdf-login-page></app-tdf-login-page>
+  </div>
+  <div *ngIf="flag">
+    <h3>MDF Login</h3>
+    <app-mdf-login-page></app-mdf-login-page>
+  </div>
+  <br/><br/><br/>
+  <input type="button" [value]="b1" (click)="change()">
+</div>

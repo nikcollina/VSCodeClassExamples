@@ -1,0 +1,25 @@
+<div>
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                <h2>Add Employee Details</h2>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form #empRef="ngForm" (ngSubmit)="storeUser(empRef.value)">
+                <mat-form-field>
+                    <mat-label>ID</mat-label>
+                    <input matInput type="text" name="id" ngModel />
+                </mat-form-field>
+                &nbsp;
+                <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input matInput type="text" name="name" ngModel />
+                </mat-form-field>
+                <br />
+                <button mat-raised-button type="submit">Store</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

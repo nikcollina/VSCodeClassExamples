@@ -1,0 +1,39 @@
+<div>
+    <h2>Structure Directive</h2>
+
+    <input type="button" [value]="b1" (click)="change()">
+
+    <div *ngIf="flag">
+        <h2>Welcome to structure directive code</h2>
+
+        <h3>Student Names</h3>
+        <ul>
+            <li *ngFor="let std of stdNames">{{std}}</li>
+        </ul>
+        Skill Name:<input type="text" #sname /><input type="button" value="AddSkillSet"
+            (click)="addSkillName(sname.value)" />
+        <ul>
+            <li *ngFor="let s of skillNames">{{s}}</li>
+        </ul>
+        <br/>
+        <p>
+            Employee details:<br/>
+            ID is {{emp.id}}, Name is {{emp.name}}, and Salary is {{emp.salary}}
+
+        </p>
+        <br/>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+            <tr *ngFor="let emp of employees">
+                <td>{{emp.id}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.salary}}</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
