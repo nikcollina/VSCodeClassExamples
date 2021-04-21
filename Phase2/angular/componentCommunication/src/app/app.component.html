@@ -1,0 +1,17 @@
+<div>
+  <h1>Component Communication Example</h1>
+  <h3>Parent</h3>
+  name: <input type="text" #nameRef/><br/>
+  <input type="button" value="pass the name" (click)="passName(nameRef.value)">
+  Parent Name in parent Component is {{parentName}}<br/>
+  <h3>Add Product Names</h3>
+  Product Name: <input type="text" #productRef><br/>
+  <input type="button" value="add product" (click)="addProduct(productRef.value)">
+  <br/>
+  Child age is {{childAge}}
+  <hr/>
+  <app-child1 [pName]="parentName" (ageEventRef)="childAge=$event"></app-child1>
+  <hr/>
+  <app-child2 [cProducts]="products"></app-child2>
+  <hr/>
+</div>
